@@ -27,3 +27,5 @@ Start the demo project using:
 ```bash
 docker run -d --name django-comments-xtd-demo --restart=always --publish 80:8000 danirus/django-comments-xtd-demo:2.0.5
 ```
+
+Comments sent by registered users don't have to be confirmed by mail, and neither need user's full name and mail address. To test sending comments as a logged in user visit the admin URL at http://localhost/admin/ and login as the user `admin` with password `admin`.
