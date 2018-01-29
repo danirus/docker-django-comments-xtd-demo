@@ -11,8 +11,9 @@ RUN git clone --depth=1 git://github.com/danirus/django-comments-xtd.git && \
     npm install && \
     node_modules/webpack/bin/webpack.js -p && \
     cd django_comments_xtd && \
-    django-admin compilemessages -l fr && \
     django-admin compilemessages -l es && \
+    django-admin compilemessages -l fi && \
+    django-admin compilemessages -l fr && \
     cd ../example/comp && \
     pip install -r requirements.txt && \
     python manage.py migrate && \
