@@ -11,7 +11,7 @@ Users can send comments to Articles and Quotes. Comments for Articles are handle
 Automated builds of the image are available on [Dockerhub](https://hub.docker.com/r/danirus/django-comments-xtd-demo) and is the recommended method of installation.
 
 ```bash
-docker pull danirus/django-comments-xtd:latest
+docker pull danirus/django-comments-xtd-demo:latest
 ```
 
 Alternatively you can build the image yourself.
