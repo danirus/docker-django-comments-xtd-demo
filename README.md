@@ -1,4 +1,4 @@
-# danirus/django-comments-xtd-demo:2.0.5
+# danirus/django-comments-xtd-demo:latest
 
 `Dockerfile` to create a [Docker](https://www.docker.com/) container image to test the django-comments-xtd demo project.
 
@@ -11,7 +11,7 @@ Users can send comments to Articles and Quotes. Comments for Articles are handle
 Automated builds of the image are available on [Dockerhub](https://hub.docker.com/r/danirus/django-comments-xtd-demo) and is the recommended method of installation.
 
 ```bash
-docker pull danirus/django-comments-xtd:2.0.5
+docker pull danirus/django-comments-xtd:latest
 ```
 
 Alternatively you can build the image yourself.
@@ -25,7 +25,7 @@ docker build -t danirus/django-comments-xtd-demo github.com/danirus/docker-djang
 Start the demo project using:
 
 ```bash
-docker run -d --name django-comments-xtd-demo --restart=always --publish 80:8000 danirus/django-comments-xtd-demo:2.0.5
+docker run -d --name django-comments-xtd-demo --restart=always --publish 80:8000 danirus/django-comments-xtd-demo:latest
 ```
 
 Comments sent by registered users don't have to be confirmed by mail, and neither need user's full name and mail address. To test sending comments as a logged in user visit the admin URL at http://localhost/admin/ and login as the user `admin` with password `admin`.
